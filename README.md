@@ -1,6 +1,6 @@
 # Overview
 
-This is a project using Python, where LASSO regression is fit to model the relationship between changes in use of a pitch type and its change in performance using Statcast data between the 2021 and 2023 MLB seasons. The results of the project can be found in the file *PitchUseAndPerformance.ipynb*.
+This is a project using Python, where LASSO regression is fit to model the relationship between changes in use of a pitch type and its change in performance using Statcast data between the 2021 and 2023 MLB seasons. The results of the project can be found in the file [*PitchUseAndPerformance.ipynb*](https://github.com/jackhinde/PitchUseAndPerformance/blob/main/PitchUseAndPerformance.ipynb).
 
 This project was presented at the 2024 Saberseminar. A link to the presentation can be found [here](https://youtu.be/_AcaHNSP3RU).
 
@@ -35,7 +35,7 @@ Interactions between each of those variables will also be included in the model.
 
 The method that will be used to fit the model will be [LASSO regression](https://en.wikipedia.org/wiki/Lasso_(statistics)). This method was chosen as it accomplishes the goal of modeling and predicting the change in performance, and it selects the subset of variables that best explain the variation in the data under the assumption that not all of the variables are relevant to this.
 
-The file *PitchUseAndPerformance.ipynb* loads, cleans, and formats the data, and fits the model. The results of the model are calculated in the notebook, and the model is applied in three examples. The first example is in predicting the average expected change by pitch type at two different levels of increase to percentage thrown, and the second and third examples make predictions using the pitch types of Gerrit Cole and Blake Snell in 2023.
+The file [*PitchUseAndPerformance.ipynb*](https://github.com/jackhinde/PitchUseAndPerformance/blob/main/PitchUseAndPerformance.ipynb) loads, cleans, and formats the data, and fits the model. The results of the model are calculated in the notebook, and the model is applied in three examples. The first example is in predicting the average expected change by pitch type at two different levels of increase to percentage thrown, and the second and third examples make predictions using the pitch types of Gerrit Cole and Blake Snell in 2023.
 
 The notebook can be run to produce the model, and predictions of changes to performance as their use is changed can be made on the pitch types of any pitcher who appeared between 2021 and 2023 using the `view_pred_RV_per_100_diff` function.
 
