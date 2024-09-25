@@ -1,6 +1,6 @@
 # Overview
 
-This is a project using Python, where LASSO regression is fit to model the relationship between changes in use of a pitch type and its change in performance using Statcast data between the 2021 and 2023 MLB seasons. The results of the project can be found in the file [*PitchUseAndPerformance.ipynb*](https://github.com/jackhinde/PitchUseAndPerformance/blob/main/PitchUseAndPerformance.ipynb).
+This is a project using Python, where LASSO regression is fit to model the relationship between changes in use of a pitch type and its change in performance using Statcast data between the 2021 and 2023 MLB seasons. The project can be found in the file [*PitchUseAndPerformance.ipynb*](https://github.com/jackhinde/PitchUseAndPerformance/blob/main/PitchUseAndPerformance.ipynb).
 
 This project was presented at the 2024 Saberseminar. A link to the presentation can be found [here](https://youtu.be/_AcaHNSP3RU).
 
