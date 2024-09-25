@@ -20,16 +20,17 @@ The changes to performance of a pitch type will also be measured against the obs
 
 The goal of this project will be fitting a function $f$ to approximate the expected change in performance of the pitch type as a consequence of changing its use, that is $\Delta RV(\Delta x) = \hat{RV} - RV \approx f(\Delta x)$. The data used in fitting this model and in making predictions is from MLB's publicly-available [Statcast database](https://baseballsavant.mlb.com/statcast_search) which is scraped using the [pybaseball](https://pypi.org/project/pybaseball/) package. The dataset includes every pitch thrown in an MLB regular season game between 2021 and 2023. More details about the data can be found in the [Statcast Search CSV Documentation](https://baseballsavant.mlb.com/csv-docs).
 
-Other variables that may influence the change in performance of the pitch type will be considered. These include:\
-1. The classified pitch type from Statcast\
-2. The rank of the pitch type in the pitcher's mix (most thrown, second-most thrown, etc.)\
+Other variables that may influence the change in performance of the pitch type will be considered. These include:
+1. The classified pitch type from Statcast
+2. The rank of the pitch type in the pitcher's mix (most thrown, second-most thrown, etc.)
 3. Pitch-level metrics from Statcast. These are:\
 a. The velocity of the pitch\
 b. The spin rate of the pitch\
 c. The spin axis of the pitch\
 d. The extension of the pitcher's release towards home plate on the pitch\
 e. The pitcher's horizontal and vertical release on the pitch\
-f. The horizontal and vertical break of the pitch\
+f. The horizontal and vertical break of the pitch
+
 Interactions between each of those variables will also be included in the model.
 
 The method that will be used to fit the model will be [LASSO regression](https://en.wikipedia.org/wiki/Lasso_(statistics)). This method was chosen as it accomplishes the goal of modeling and predicting the change in performance, and it selects the subset of variables that best explain the variation in the data under the assumption that not all of the variables are relevant to this.
